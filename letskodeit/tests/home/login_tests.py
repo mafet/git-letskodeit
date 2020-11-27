@@ -11,7 +11,7 @@ class LoginTests(unittest.TestCase):
         self.lp = LoginPage(self.driver)
         self.ts = TestStatus(self.driver)
 
-    @pytest.mark.run(order=1)
+    @pytest.mark.run(order=2)
     def test_validLogin(self):
         self.lp.login("test@email.com", "abcabc")
         result1 = self.lp.verifyLoginTitle()
